@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/72406d320f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner container">
+        <h1>
+            <a href="#">
+                <span class="site-title">MM Design Lab</span><span class="name">---Rumi Endo---</span>
+            </a>
+        </h1>
+        <button class="hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+        <nav class="nav" id="js-nav">
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#works">WORKS</a>
+                <ul>
+                    <li><a href="detail/wp_01.html">Webサイト制作</a></li>
+                    <li><a href="detail/lp_01.html">LP制作1</a></li>
+                    <li><a href="detail/lp_02.html">LP制作2</a></li>
+                    <li><a href="#banner">バナー制作</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        </nav>
+        <div class="overlay" id="js-overlay"></div>
+    </div>
+  </header>
+
+  <!-- 自己紹介 -->
+  <section id="about">
+    <h2>ABOUT</h2>
+    <p>
+      Webデザイナーとして、LP制作・WordPressサイト制作・バナー制作を中心に活動しています。<br>
+      ユーザーにとって分かりやすく、目的達成につながるデザインを意識しています。
+    </p>
+  </section>
+
+  <!-- スキル -->
+  <section id="skill">
+    <h2>SKILL</h2>
+    <ul>
+      <li>HTML / CSS</li>
+      <li>WordPress（テーマ使用・子テーマ）</li>
+      <li>LPデザイン制作・実装</li>
+      <li>簡易なJavaScript</li>
+      <li>バナーデザイン</li>
+      <li>GA4のLooker Studioレポート作成</li>
+    </ul>
+  </section>
+
+  <!-- 実績 -->
+  <section id="works">
+  <h2>WORKS</h2>
+
+    <!-- Webサイト -->
+  <h3>Webサイト制作</h3>
+  <div class="works-group">
+    <div class="flex_work-item">
+        <a href="detail/wp_01.html" class="work-card trans">
+            <img src="images/wp.png" alt="WPで制作のサイト">
+        </a>
+        <div class="work-text">
+            <h4 class="chain"><a href="detail/wp_01.html">社労士事務所Webサイト制作</a></h4>
+            <p>
+                目的：顧問契約の問い合わせ増加<br>
+                ターゲット：従業員10〜50名の中小企業<br>
+                課題：サービス内容が分かりづらい構成<br>
+                工夫：情報整理と導線設計を見直し、相談しやすさを意識したUI設計<br>
+                担当範囲：デザイン / コーディング<br>
+                URL：<a href="https://re-member-roum.jp/" target="_blank" class="external-link">https://re-member-roum.jp/</a>
+            </p>
+        </div>
+    </div>
+  </div>
+
+  <!-- LP -->
+  <h3>LP制作</h3>
+  <div class="works-group">
+    <div class="flex_work-item">
+        <a href="detail/lp_01.html" class="work-card trans">
+            <img src="images/lp1.png" alt="LPデザイン1">
+        </a>
+        <div class="work-text">
+            <h4 class="chain"><a href="lp_01.html">トレーニングジムLP制作</a></h4>
+            <p>
+                目的：無料体験の申込み<br>
+                ターゲット：パーソナルジム初心者の女性<br>
+                課題：通常料金が少々高額<br>
+                工夫：色使いやフォントを選別し、高級感を演出<br>
+                担当範囲：デザイン / コーディング
+            </p>
+        </div>
+    </div>
+    <div class="flex_work-item">
+        <a href="detail/lp_02.html" class="work-card trans">
+            <img src="images/lp2.png" alt="LPデザイン2">
+        </a>
+        <div class="work-text">
+            <h4 class="chain"><a href="lp_02.html">SNS代行サービスLP制作</a></h4>
+            <p>
+                目的：お問い合わせ増加<br>
+                ターゲット：Instagram運用に不安のある中小企業<br>
+                課題：企業に頼らずとも、自社で出来るのでは？と思われがちなサービス<br>
+                工夫：費用を上回るメリットを、わかりやすく表現<br>
+                担当範囲：デザイン / コーディング
+            </p>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- バナー -->
+  <h3 id="banner">バナー</h3>
+  <div class="works-group">
+    <div class="flex_work-item">
+        <div class="work-card">
+            <img src="images/banner1.png" alt="社労士事務所広告バナー">
+        </div>
+        <div class="work-text">
+            <h4>社労士事務所広告バナー制作</h4>
+            <p>
+                目的：クリック率向上<br>
+                士業として信頼される配色と文字設計を工夫<br>
+                担当範囲：コピー / デザイン
+            </p>
+        </div>
+    </div>
+    <div class="flex_work-item">
+        <div class="work-card">
+            <img src="images/banner2.jpg" alt="女性カウンセラーバナー">
+        </div>
+        <div class="work-text">
+            <h4>女性カウンセラーバナー制作</h4>
+            <p>
+                目的：クリック率向上<br>
+                女性らしい配色と文字設計で親しみやすさを演出<br>
+                担当範囲：デザイン
+            </p>
+        </div>
+    </div>
+    <div class="flex_work-item">
+        <div class="work-card">
+            <img src="images/banner3.png" alt="時短家事広告バナー">
+        </div>
+        <div class="work-text">
+            <h4>時短家事広告バナー制作</h4>
+            <p>
+                目的：クリック率向上<br>
+                主婦目線で配色と文字設計を工夫し、イラストも混ぜてラフ感も演出<br>
+                担当範囲：コピー / デザイン
+            </p>
+        </div>
+    </div>
+    <div class="flex_work-item">
+        <div class="work-card">
+            <img src="images/banner4.png" alt="動画編集者広告バナー">
+        </div>
+        <div class="work-text">
+            <h4>動画編集者広告バナー制作</h4>
+            <p>
+                目的：クリック率向上<br>
+                同じ悩みを持つターゲットから共感を得やすい配色と文字設計を工夫<br>
+                担当範囲：コピー / デザイン
+            </p>
+        </div>
+    </div>
+    <div class="flex_work-item">
+        <div class="work-card">
+            <img src="images/banner5.png" alt="WEBデザイナー広告バナー">
+        </div>
+        <div class="work-text">
+            <h4>WEBデザイナー広告バナー制作</h4>
+            <p>
+                目的：クリック率向上<br>
+                案件獲得に悩む女性WEBデザイナーに向け、親しみやすい配色と文字設計を工夫<br>
+                担当範囲：コピー / デザイン
+            </p>
+        </div>
+    </div>
+    <div class="flex_work-item">
+        <div class="work-card">
+            <img src="images/banner6.png" alt="YouTubeサムネイル">
+        </div>
+        <div class="work-text">
+            <h4>YouTubeサムネイル制作</h4>
+            <p>
+                目的：クリック率向上<br>
+                題目に合わせ、ポジティブな配色やデザインを工夫<br>
+                担当範囲：デザイン
+            </p>
+        </div>
+    </div>
+  </div>
+</section>
+
+  <!-- お問い合わせ -->
+<section id="contact">
+    <h2>CONTACT</h2>
+    <p>お問い合わせはこちらから</p>
+    <form action="#" method="post">
+    <div class="form-group">
+        <label for="name">お名前 <span class="required">※必須</span></label>
+        <input id="name" type="text" name="name" placeholder="例：山田 太郎">
+    </div>
+
+    <div class="form-group">
+        <label for="email">メールアドレス <span class="required">※必須</span></label>
+        <input id="email" type="email" name="email" placeholder="example@mail.com">
+    </div>
+
+    <div class="form-group">
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="message" placeholder="お問い合わせ内容をご入力ください"></textarea>
+    </div>
+    <button type="button">送信する（※ダミー）</button>
+    </form>
+</section>
+
+<footer>
+<p>© MM Design Lab</p>
+</footer>
+
+</body>
+</html>

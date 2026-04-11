@@ -359,6 +359,18 @@ h3::before {
   content: none;
 }
 
+.detail-sp{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .detail-sp{
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
 /* お問い合わせ */
 #contact {
   padding-bottom: 60px;

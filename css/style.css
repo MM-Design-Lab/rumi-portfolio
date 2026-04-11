@@ -164,6 +164,43 @@ h1 {
   visibility: visible;
 }
 
+/*ヒーロー部分*/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f7e7ea, #f3efe9);
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.hero-inner {
+  max-width: 800px;
+}
+
+.catchcopy {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.catchcopy::after {
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underlineAnim 1s ease forwards;
+  animation-delay: 0.1s;
+}
+@keyframes underlineAnim {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.subcopy {
+  color: #555;
+  line-height: 1.8;
+}
 
 /* セクション */
 section {

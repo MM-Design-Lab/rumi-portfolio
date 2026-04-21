@@ -22,16 +22,20 @@ body {
   color: var(--text-color);
 }
 
+h1, h2, h3 {
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .sp {display: block;}
 .pc {display: none;}
 @media (min-width: 768px) {
   .sp {display: none;}
   .pc {display: block;}
-}
-
-h1, h2, h3 {
-  line-height: 1.4;
-  font-weight: 700;
 }
 
 /* header */
@@ -278,7 +282,10 @@ h3::before {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: var(--shadow);
-  width: 100%;
+}
+
+.work-card--narrow {
+  width: 80%;
 }
 
 .work-card p {
@@ -287,15 +294,16 @@ h3::before {
   color: var(--text-sub);
 }
 
-.works-group > .flex_work-item:last-child {
-  margin-bottom: 4em;
-}
-
 .flex_work-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
   margin-bottom: 2em;
+}
+
+.works-group > .flex_work-item:last-child {
+  margin-bottom: 4em;
 }
 
 .work-text h4 {
@@ -331,14 +339,20 @@ h3::before {
 
 @media (min-width: 768px) {
   .flex_work-item {
-    display: flex;
-    flex-direction: row;
     gap: 20px;
+  }
+  .flex_work-item--wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-end;
   }
-  .work-text{
-    width: 60%;
+  .flex_work-item--wrap .work-card {
+    width: calc(50% - 1em);
   }
+  .flex_work-item--wrap .work-text {
+    width: calc(50% - 1em);
+  }
+
 }
 
 /* detail */
@@ -364,10 +378,19 @@ h3::before {
   flex-direction: column;
   gap: 1rem;
 }
+
+.detail-content{
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .detail-sp{
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
+  }
+  .detail-content{
+    width: calc(50% - 10px);
   }
 }
 

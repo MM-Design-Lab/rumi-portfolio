@@ -325,8 +325,9 @@ h3::before {
   color: var(--main-color);
 }
 
-.work-text p {
-  padding-top: 5px;
+.work-text p span {
+  margin-top: 0.5em;
+  display: inline-block;
 }
 
 .external-link::after {
@@ -389,7 +390,7 @@ h3::before {
     gap: 20px;
     flex-wrap: wrap;
   }
-  .detail-content{
+  .detail-sp .detail-content{
     width: calc(50% - 10px);
   }
 }

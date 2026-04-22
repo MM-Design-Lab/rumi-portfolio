@@ -366,6 +366,10 @@ h3::before {
   width: 16em;
 }
 
+#detail h3 {
+    margin: 4em 0 0;
+}
+
 #detail .flex_work-item h3::before {
   content: none;
 }
